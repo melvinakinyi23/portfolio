@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Melvine Portfolio</title>
+  <link rel="stylesheet" href="styles.css"
+  
+</head>
+<body>
+    <div class="main">
+
+<div class="navbar">
+  <a href="#" onclick="showSection('home')">HOME</a>
+  <a href="#" onclick="showSection('about')">ABOUT</a>
+  <a href="#" onclick="showSection('skills')">SKILLS</a>
+  <a href="#" onclick="showSection('contact')">CONTACT</a>
+  <a href="#" onclick="showSection('education')">EDUCATION</a>
+</div>
+
+<div id="home" class="section active">
+  <h2>Welcome to Melvin's Portfolio</h2>
+  <p>Hello! I’m Melvine, a passionate software tester, software engeneer and a web developer.</p>
+  <p>I am from Kenya</p>
+</div>
+
+<div id="about" class="section">
+  <h2>About Me</h2>
+  <p>I’m a student pursing my undergraduate degree and also a software tester.</p>
+</div>
+
+<div id="skills" class="section">
+  <h2>Skills</h2>
+  <ul>
+    <li>programming</li>
+    <li>software testing</li>
+    <li>web design</li>
+    <li>automated testing</li>
+  </ul>
+</div>
+
+<div id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: melvinakinyi623@gmail.com</p>
+  <p>Phone: 0713059155</p>
+</div>
+<div id="education" class="section">
+    <h2>Study</h2>
+    <p>I am currently pursing my undergraduate degree at Kenyatta University in Kenya</p>
+    <P>A bachelor of science in mathematics and computer science</P>
+  </div>
+  
+  
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
+  }
+</script>
+<div class="button">
+    <a href="#" class="btn">EXPLORE</a>
+</div>
+<div class="search-box">
+    <input class="search-text" type="text" name="" placeholder="Type to search">
+    <a class="search-btn" href="#"><i class="search(version: "6.0.0", query: "coff", first: 5) { id }"></i></a>
+ </div>
+ <div class="social-links">
+    <a href="https://www.instagram.com/call_me_mexzel" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/Melvin Akinyi" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/Melvin Akinyi" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn">
+    </a>
+  </div>
+
+</body>
+<footer>
+    <p>&copy; 2025 Melvin. All rights reserved.</p>
+  </footer>
+</html>
